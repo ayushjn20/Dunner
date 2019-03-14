@@ -1,0 +1,7 @@
+Package: dunner
+Version: #version#
+Section: base
+Priority: optional
+Architecture: #arch#
+Maintainer: Ayush Jain <ayushjain20n@gmail.com>
+Description: Dunner is a task runner tool like Grunt but used Docker images like CircleCI do. You can define tasks and steps of the tasks in your dunner file and then run these steps with `Dunner do <taskname>
