@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/leopardslab/dunner/pkg/config"
+	"github.com/ayushjn20/dunner/pkg/config"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

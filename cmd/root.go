@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/ayushjn20/dunner/internal/logger"
 	"github.com/docker/docker/client"
-	"github.com/leopardslab/dunner/internal/logger"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

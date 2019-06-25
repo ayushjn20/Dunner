@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/leopardslab/dunner/internal/settings"
+	"github.com/ayushjn20/dunner/internal/settings"
 )
 
 func TestStep_Do(t *testing.T) {

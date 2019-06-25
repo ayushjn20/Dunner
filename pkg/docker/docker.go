@@ -11,6 +11,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ayushjn20/dunner/internal/logger"
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/mount"
@@ -18,7 +19,6 @@ import (
 	"github.com/docker/docker/pkg/jsonmessage"
 	"github.com/docker/docker/pkg/stdcopy"
 	"github.com/docker/docker/pkg/term"
-	"github.com/leopardslab/dunner/internal/logger"
 	"github.com/spf13/viper"
 )
 

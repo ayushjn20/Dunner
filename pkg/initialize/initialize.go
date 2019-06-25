@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/leopardslab/dunner/internal"
-	"github.com/leopardslab/dunner/internal/logger"
+	"github.com/ayushjn20/dunner/internal"
+	"github.com/ayushjn20/dunner/internal/logger"
 )
 
 // InitProject generates a dunner task file with default template

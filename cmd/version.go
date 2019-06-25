@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	G "github.com/leopardslab/dunner/pkg/global"
+	G "github.com/ayushjn20/dunner/pkg/global"
 	"github.com/spf13/cobra"
 )
 

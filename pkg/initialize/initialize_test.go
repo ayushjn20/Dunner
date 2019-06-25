@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/leopardslab/dunner/internal"
-	"github.com/leopardslab/dunner/pkg/config"
+	"github.com/ayushjn20/dunner/internal"
+	"github.com/ayushjn20/dunner/pkg/config"
 	yaml "gopkg.in/yaml.v2"
 )
 

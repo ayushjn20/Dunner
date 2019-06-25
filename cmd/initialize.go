@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/leopardslab/dunner/internal/logger"
-	"github.com/leopardslab/dunner/pkg/initialize"
+	"github.com/ayushjn20/dunner/internal/logger"
+	"github.com/ayushjn20/dunner/pkg/initialize"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

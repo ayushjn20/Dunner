@@ -8,9 +8,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/leopardslab/dunner/internal/logger"
-	"github.com/leopardslab/dunner/pkg/config"
-	"github.com/leopardslab/dunner/pkg/docker"
+	"github.com/ayushjn20/dunner/internal/logger"
+	"github.com/ayushjn20/dunner/pkg/config"
+	"github.com/ayushjn20/dunner/pkg/docker"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

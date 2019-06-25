@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/leopardslab/dunner/internal/util"
-	"github.com/leopardslab/dunner/pkg/docker"
+	"github.com/ayushjn20/dunner/internal/util"
+	"github.com/ayushjn20/dunner/pkg/docker"
 )
 
 func TestGetConfigs(t *testing.T) {
