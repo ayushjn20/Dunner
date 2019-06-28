@@ -125,6 +125,7 @@ func process(configs *config.Configs, s *docker.Step, wg *sync.WaitGroup, args [
 		}
 		if res.Error != "" {
 			fmt.Printf(`ERR: %s`, res.Error)
+			os.Exit(1)
 		}
 	}
 }
