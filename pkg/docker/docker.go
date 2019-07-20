@@ -125,6 +125,18 @@ func (step Step) Exec() (*[]Result, error) {
 			log.Warn(warning)
 		}
 	}
+	rsp, err := cli.ContainerAttach(ctx, resp.ID, types.ContainerAttachOptions{
+		Stream: false,
+		Stdout: true,
+		Stderr: true,
+		Logs:   true,
+	})
+
+	if err != nil {
+		log.Fatal("[Attach] Fail. %s \n", err)
+	}
+	log.Debug("[Attach] %s", resp.ID)
+	defer rsp.Close()
 
 	if err = cli.ContainerStart(ctx, resp.ID, types.ContainerStartOptions{}); err != nil {
 		log.Fatal(err)
@@ -193,6 +205,14 @@ func runCmd(ctx context.Context, cli *client.Client, containerID string, command
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	res, err := cli.ContainerExecInspect(ctx, exec.ID)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Debug(res)
+	log.Info(res.ExitCode)
+
 	defer resp.Close()
 
 	return extractResult(resp.Reader, command), nil
